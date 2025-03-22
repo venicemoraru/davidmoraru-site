@@ -28,7 +28,8 @@ body, html {
 }
 
 .logo {
-  width: 150px;
+  padding: 20px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
