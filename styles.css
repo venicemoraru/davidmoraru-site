@@ -72,16 +72,6 @@ body, html {
         height: 100vh;
         width: auto;
     }
-
-    .nav-toggle {
-        top: 15px;
-        left: 20px;
-        font-size: 35px;
-    }
-
-    .nav-menu {
-        font-size: 20px;
-    }
 }
 
 /* Prevent horizontal scrolling */
