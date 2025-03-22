@@ -36,26 +36,26 @@ body, html {
     top: 20px;
     left: 50vw;
     width: 120px;
-    oject-position: center;
+    oject-position: center !important;
     border: none;
 }
 
 .nav-toggle {
     position: relative !important;
-    top: 20px !important;
-    left: 20px !important;
-    font-size: 80px !important;
+    top: 40px !important;
+    left: 30px !important;
+    font-size: 40px !important;
     color: white;
     cursor: pointer;
 }
 
 .nav-menu {
-    position: absolute;
-    top: 60px;
-    left: 60px;
+    position: relative !important;
+    top: 80px !important;
+    left: 30px !important;
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.8);
+    background: transparent;
     padding: 10px;
 }
 
