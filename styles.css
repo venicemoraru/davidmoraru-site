@@ -39,7 +39,7 @@ body, html {
 .logo {
     position: fixed;
     top: 20px;
-    left: 20px;
+    left: 50%;
     width: 120px;
 }
 
@@ -78,12 +78,14 @@ body, html {
         left: 50%;
         transform: translateX(-50%);
     }
-    
+  .video-background {
+    object-position: center; /* Keep the video centered */
+  }
     .nav-toggle {
-        left: 20px;
+        left: 10vw;
     }
     
     .nav-menu {
-        left: 20px;
+        left: 10vm;
     }
 }
