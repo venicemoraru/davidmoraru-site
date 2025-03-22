@@ -14,7 +14,7 @@ body, html {
 }
 
 /* Style for the background video */
-.background-video, .video-background iframe {
+.video-background iframe {
   position: fixed;
   bottom: 0;
   top: 0;
@@ -67,7 +67,7 @@ body, html {
 }
 
 @media (max-width: 768px) {
-    .background-video .video-background iframe {
+    .video-background iframe {
         object-fit: cover;
         width: 200vw;
         height: 130vh;
