@@ -43,7 +43,7 @@ body, html {
 .nav-toggle {
     position: relative !important;
     top: 40px !important;
-    left: 30px !important;
+    left: 50px !important;
     font-size: 40px !important;
     color: white;
     cursor: pointer;
@@ -51,11 +51,12 @@ body, html {
 
 .nav-menu {
     position: relative !important;
-    top: 80px !important;
-    left: 30px !important;
+    top: 50px !important;
+    left: 50px !important;
     display: none;
     flex-direction: column;
-    background: transparent;
+    background: none;
+    background-color: transparent
     padding: 10px;
 }
 
