@@ -1,5 +1,5 @@
 body {
-    margin: 20px;
+    margin: 0;
     padding: 0;
     font-family: "Corbel", sans-serif;
     font-weight: bold;
@@ -14,7 +14,7 @@ body, html {
 }
 
 /* Style for the background video */
-.background-video iframe {
+.background-video, .video-background iframe {
   position: fixed;
   bottom: 0;
   top: 0;
@@ -81,28 +81,13 @@ body, html {
         left: 50%;
         transform: translateX(-50%);
     }
-/* Web: Hover effect */
-@media (min-width: 768px) {
-    .nav-toggle:hover + .nav-menu,
-    .nav-menu:hover {
-        display: flex;
-    }
-}
 
-/* Mobile: Click functionality */
-@media (max-width: 767px) {
-    .nav-menu {
-        display: none;
-        position: absolute;
+    .nav-toggle {
+        top: 15px;
         left: 20px;
-        top: 60px;
-        background: rgba(0, 0, 0, 0.9);
-        padding: 15px;
+        font-size: 35px;
     }
-}
-    .nav-menu.open {
-        display: flex;
-    }
+
     .nav-menu {
         font-size: 35px;
     }
@@ -115,3 +100,10 @@ html, body {
   overflow-x: hidden;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
