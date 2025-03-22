@@ -27,6 +27,13 @@ body, html {
   pointer-events: none;
 }
 
+.logo {
+  width: 200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav-toggle {
     position: absolute;
     top: 15px;
@@ -99,9 +106,4 @@ header {
   align-items: center;
   height: 100vh;
   margin: 0;
-}
-
-.logo {
-  width: 200px;
-  height: auto;
 }
