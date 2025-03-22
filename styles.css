@@ -71,7 +71,6 @@ body, html {
         object-fit: cover;
         width: 200vw;
         height: 130vh;
-        width: auto;
     }
         .nav-toggle {
         top: 45px;
