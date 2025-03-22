@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Moraru</title>
-    <img rel="Logo.webp" alt="Logo" class="logo" id="logo">
+    <img rel="Logo.webp" alt="Logo" class="logo">
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -29,9 +29,9 @@
             opacity: 100;
         }
         .nav-toggle {
-            position: fixed;
+            position: relative;
             top: 20px;
-            left: 200px;
+            left: 45px;
             font-size: 40px;
             cursor: pointer;
             color: white;
@@ -39,11 +39,11 @@
         }
         .nav-menu {
             position: fixed;
-            top: 70px;
-            left: 200px;
+            top: 47px;
+            left: 40px;
             display: none;
             flex-direction: column;
-            background: rgba(0, 0, 0, 0.8);
+            background: none
             padding: 10px;
         }
         .nav-menu a {
@@ -66,7 +66,7 @@
                 position: absolute;
                 left: 20px;
                 top: 60px;
-                background: rgba(0, 0, 0, 0.9);
+                background: rgba(0, 0, 0, 0);
                 padding: 15px;
             }
             .nav-menu.open {
