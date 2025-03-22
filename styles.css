@@ -41,7 +41,7 @@ body, html {
 }
 
 .nav-toggle {
-    position: fixed;
+    position: relative;
     top: 20px;
     left: 20px;
     font-size: 40px;
@@ -50,7 +50,7 @@ body, html {
 }
 
 .nav-menu {
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 60px;
     display: none;
@@ -62,7 +62,7 @@ body, html {
 .nav-menu a {
     color: white;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 40px;
     margin: 10px 0;
 }
 
