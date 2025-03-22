@@ -5,12 +5,7 @@ body {
     font-weight: bold;
     background: black;
     overflow: hidden;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body, html {
@@ -35,12 +30,6 @@ body, html {
   height: 100vh; /* Use viewport height */
   pointer-events: none; /* Prevents interaction with the video */
 }
-
-/* Ensuring video does not overlap on mobile */
-@media (max-width: 768px) {
-  .video-background {
-    object-position: center; /* Keep the video centered */
-  }
 
 .logo {
     position: fixed;
