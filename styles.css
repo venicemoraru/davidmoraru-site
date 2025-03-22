@@ -69,6 +69,8 @@ body, html {
 
 .nav-menu.open {
     display: flex;
+    background: none;
+    background-color: transparent
 }
 
 @media (max-width: 768px) {
