@@ -34,7 +34,7 @@ body, html {
 .logo {
     position: fixed;
     top: 20px;
-    left: 50%;
+    left: 50vw;
     width: 120px;
     oject-position: center;
 }
