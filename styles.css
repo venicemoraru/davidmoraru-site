@@ -13,46 +13,33 @@ body, html {
   overflow: hidden;
 }
 
-.video-background {
-  position: fixed; /* Make sure it's fixed relative to the viewport */
+/* Style for the background video */
+.background-video, .video-background iframe {
+  position: fixed;
+  bottom: 0;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Ensures the video stays behind content */
-}
-
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw; /* Use viewport width */
-  height: 100vh; /* Use viewport height */
-  pointer-events: none; /* Prevents interaction with the video */
-}
-
-.logo {
-    position: fixed;
-    top: 20px;
-    left: 50vw;
-    width: 120px;
-    oject-position: center !important;
-    border: none;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .nav-toggle {
-    position: relative !important;
-    top: 40px !important;
-    left: 50px !important;
-    font-size: 40px !important;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 35px;
     color: white;
     cursor: pointer;
 }
 
 .nav-menu {
-    position: relative !important;
-    top: 45px !important;
-    left: 50px !important;
+    position: absolute;
+    top: 15px;
+    left: 20px;
     display: none;
     flex-direction: column;
     background: none;
@@ -66,48 +53,55 @@ body, html {
     font-size: 40px;
     margin: 10px 0;
     background: none;
-    background-color: transparent
+    background-color: transparent;
 }
 
 .nav-menu.open {
     display: flex;
-    background: none;
-    background-color: transparent
 }
 
 @media (max-width: 768px) {
     .logo {
         left: 50%;
         transform: translateX(-50%);
-        border: none;
+        width: 120px;
     }
-  .video-background {
-    object-position: center; /* Keep the video centered */
-  }
+
+    .background-video {
+        object-fit: cover;
+        height: 100vh;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .nav-toggle {
-    position: absolute;
-    top: 15px;         /* Adjust the top distance */
-    left: 20px;        /* Adjust left/right position for mobile */
-    font-size: 35px;   /* You can change the size of the icon here */
-  }
-    
-    .nav-menu {
-    position: absolute;
-    top: 15px;         /* Adjust the top distance */
-    left: 20px;        /* Adjust left/right position for mobile */
-    font-size: 35px;   /* You can change the size of the icon here */
-  }
+        top: 15px;
+        left: 20px;
+        font-size: 35px;
     }
+
+    .nav-menu {
+        font-size: 35px;
+    }
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 header {
   display: flex;
-  justify-content: center;  /* Centers the logo horizontally */
-  align-items: center;      /* Centers the logo vertically */
-  height: 100vh;            /* Ensures the header takes up the full height of the screen */
-  margin: 0;                /* Removes any default margin */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .logo {
-  width: 200px;    /* Adjust the width as needed */
-  height: auto;    /* Maintains the aspect ratio */
+  width: 200px;
+  height: auto;
 }
