@@ -74,6 +74,7 @@ body, html {
     .logo {
         left: 50%;
         transform: translateX(-50%);
+        border: none;
     }
   .video-background {
     object-position: center; /* Keep the video centered */
