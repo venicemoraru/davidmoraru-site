@@ -36,6 +36,12 @@ body, html {
   pointer-events: none; /* Prevents interaction with the video */
 }
 
+/* Ensuring video does not overlap on mobile */
+@media (max-width: 768px) {
+  .video-background {
+    object-position: center; /* Keep the video centered */
+  }
+
 .logo {
     position: fixed;
     top: 20px;
