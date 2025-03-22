@@ -28,6 +28,8 @@ body, html {
 }
 
 .logo {
+  position: sticky;
+  top: 30px
   width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -35,9 +37,9 @@ body, html {
 
 .nav-toggle {
     position: absolute;
-    top: 15px;
-    left: 20px;
-    font-size: 20px;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
     color: white;
     cursor: pointer;
 }
@@ -56,7 +58,7 @@ body, html {
 .nav-menu a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 300px;
     margin: 10px 0;
     background: none;
     background-color: transparent;
