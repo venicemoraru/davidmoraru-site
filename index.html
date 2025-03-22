@@ -23,18 +23,14 @@
         </nav>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(() => {
-                document.getElementById("logo").style.opacity = "1";
-            }, 1000);
-        
-            const navToggle = document.getElementById("nav-toggle");
-            const navMenu = document.getElementById("nav-menu");
-        
-            navToggle.addEventListener("click", function() {
-                navMenu.classList.toggle("open");
-            });
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    const navToggle = document.getElementById("nav-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    navToggle.addEventListener("click", function() {
+        navMenu.classList.toggle("open");
+    });
+});
     </script>
 </body>
 </html>
