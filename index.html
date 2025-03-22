@@ -5,107 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Moraru</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Corbel', sans-serif;
-            overflow: hidden;
-        }
-        .background video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-        .logo {
-            position: sticky;
-            top: 20px;
-            left: 50vw;
-            width: 200px;
-            opacity: 100;
-            align: center;
-        }
-        .nav-toggle {
-            position: relative;
-            top: 20px;
-            left: 45px;
-            font-size: 40px;
-            cursor: pointer;
-            color: white;
-            font-weight: bold;
-        }
-        .nav-menu {
-            position: fixed;
-            top: 47px;
-            left: 40px;
-            display: none;
-            flex-direction: column;
-            background: none
-            padding: 10px;
-        }
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            font-size: 24px;
-            margin: 5px 0;
-            display: block;
-        }
-        /* Web: Hover effect */
-        @media (min-width: 768px) {
-            .nav-toggle:hover + .nav-menu, .nav-menu:hover {
-                display: flex;
-            }
-        }
-        /* Mobile: Click functionality */
-        @media (max-width: 767px) {
-            .nav-menu {
-                display: none;
-                position: absolute;
-                left: 20px;
-                top: 60px;
-                background: rgba(0, 0, 0, 0);
-                padding: 15px;
-            }
-            .nav-menu.open {
-                display: flex;
-            }
-        }
-    </style>
 </head>
 <body>
      <div class="video-background">
-    <iframe src="https://player.vimeo.com/video/1068445525?autoplay=1&loop=1&muted=1&background=1&quality=sd" 
+         <iframe src="https://player.vimeo.com/video/1068445525?autoplay=1&loop=1&muted=1&background=1&quality=sd" 
             frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        </video>
-    </div>
-
-    <img src="Logo.webp" alt="Logo" class="logo" id="logo">
-
-    
+     </div>
+    <div class="logo">
+        <img src="Logo.webp" alt="Logo" class="logo" id="logo">
+     </div>
     <div class="nav-toggle" id="nav-toggle">+</div>
-    <nav class="nav-menu" id="nav-menu">
-        <a href="#art">art</a>
-        <a href="#film">film</a>
-        <a href="#about">about me</a>
-        <a href="#contact">contact</a>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="#art">art</a>
+            <a href="#film">film</a>
+            <a href="#about">about me</a>
+            <a href="#contact">contact</a>
     </nav>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(() => {
-                document.getElementById("logo").style.opacity = "1";
-            }, 3000);
-        
-            const navToggle = document.getElementById("nav-toggle");
-            const navMenu = document.getElementById("nav-menu");
-        
-            navToggle.addEventListener("click", function() {
-                navMenu.classList.toggle("open");
-            });
-        });
-    </script>
 </body>
 </html>
