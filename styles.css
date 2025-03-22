@@ -67,10 +67,21 @@ body, html {
 }
 
 @media (max-width: 768px) {
-    .background-video {
+    .background-video iframe {
         object-fit: cover;
         height: 100vh;
         width: auto;
+    }
+        .nav-toggle {
+        top: 15px;
+        left: 20px;
+        font-size: 35px;
+    }
+
+    .nav-menu {
+        top: 25px;
+        left: 20px:
+        font-size: 35px;
     }
 }
 
