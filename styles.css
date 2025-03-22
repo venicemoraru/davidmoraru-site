@@ -41,10 +41,10 @@ body, html {
 }
 
 .nav-toggle {
-    position: relative;
-    top: 20px;
-    left: 20px;
-    font-size: 80px;
+    position: relative !important;
+    top: 20px !important;
+    left: 20px !important;
+    font-size: 80px !important;
     color: white;
     cursor: pointer;
 }
