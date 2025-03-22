@@ -69,8 +69,8 @@ body, html {
 @media (max-width: 768px) {
     .video-background iframe {
         object-fit: cover;
-        width: 200vw;
-        height: 137vh;
+        width: 230vw;
+        height: 125vh;
     }
         .nav-toggle {
         top: 45px;
