@@ -13,12 +13,6 @@ body, html {
   overflow: hidden;
 }
 
- .logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-    }
-
 /* Style for the background video */
 .background-video, .video-background iframe {
   position: fixed;
