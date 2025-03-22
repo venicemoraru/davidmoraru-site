@@ -84,4 +84,17 @@ body, html {
     .nav-menu {
         left: 10vm;
     }
+
+header {
+  display: flex;
+  justify-content: center;  /* Centers the logo horizontally */
+  align-items: center;      /* Centers the logo vertically */
+  height: 100vh;            /* Ensures the header takes up the full height of the screen */
+  margin: 0;                /* Removes any default margin */
+}
+
+.logo {
+  width: 150px;    /* Adjust the width as needed */
+  height: auto;    /* Maintains the aspect ratio */
+}
 }
