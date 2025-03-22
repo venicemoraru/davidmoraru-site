@@ -13,6 +13,12 @@ body, html {
   overflow: hidden;
 }
 
+ .logo {
+ left: 50%;
+ transform: translateX(-50%);
+ width: 120px;
+    }
+
 /* Style for the background video */
 .background-video, .video-background iframe {
   position: fixed;
