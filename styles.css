@@ -17,23 +17,25 @@ body, html {
   height: 100%;
   overflow: hidden;
 }
-/* Basic setup for video background */
+
 .video-background {
-  position: fixed; /* Keeps video fixed during scrolling */
+  position: fixed; /* Make sure it's fixed relative to the viewport */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the whole screen */
-  z-index: -1; /* Keeps video behind content */
+  z-index: -1; /* Ensures the video stays behind content */
 }
 
-/* Media query to make sure it behaves well on mobile */
-@media (max-width: 768px) {
-  .video-background {
-    object-position: center; /* Centers the video on mobile */
-  }
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width */
+  height: 100vh; /* Use viewport height */
+  pointer-events: none; /* Prevents interaction with the video */
 }
+
 
 .logo {
     position: fixed;
