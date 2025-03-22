@@ -18,22 +18,15 @@ body, html {
   overflow: hidden;
 }
 
+/* Basic setup for video background */
 .video-background {
-  position: fixed; /* Make sure it's fixed relative to the viewport */
+  position: fixed; /* Fixed position to stay in place as the page scrolls */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Ensures the video stays behind content */
-}
-
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw; /* Use viewport width */
-  height: 100vh; /* Use viewport height */
-  pointer-events: none; /* Prevents interaction with the video */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  object-fit: cover; /* Ensures the video covers the entire area without distortion */
+  z-index: -1; /* Ensure the video stays behind the content */
 }
 
 /* Ensuring video does not overlap on mobile */
@@ -41,6 +34,7 @@ body, html {
   .video-background {
     object-position: center; /* Keep the video centered */
   }
+}
 
 .logo {
     position: fixed;
