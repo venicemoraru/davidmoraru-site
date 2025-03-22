@@ -37,7 +37,7 @@ body, html {
 .nav-toggle {
     position: absolute;
     top: 30px;
-    left: 37px;
+    left: 57px;
     font-size: 30px;
     color: white;
     cursor: pointer;
@@ -45,8 +45,8 @@ body, html {
 
 .nav-menu {
     position: absolute;
-    top: 37px;
-    left: 30px;
+    top: 40px;
+    left: 50px;
     display: none;
     flex-direction: column;
     background: none;
