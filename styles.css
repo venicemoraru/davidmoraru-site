@@ -66,6 +66,13 @@ body, html {
     display: flex;
 }
 
+.note {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: -2
+}
+
 @media (min-width: 768px) {
   .nav-toggle:hover + .nav-menu, .nav-menu:hover {
     display: flex; /* Show the menu when the hamburger icon is hovered */
