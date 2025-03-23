@@ -45,7 +45,7 @@ body, html {
 
 .nav-menu {
     position: absolute;
-    top: 95px;
+    top: 85px;
     left: 85px;
     display: none;
     flex-direction: column;
