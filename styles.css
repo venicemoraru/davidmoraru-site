@@ -25,8 +25,8 @@ body, html {
   object-fit: cover;
   z-index: -1;
   pointer-events: none;
-  opacity: 0; /* Start hidden */
-  transition: opacity 3s ease-in; /* Fade in effect */
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 3s ease-in-out forwards;
 }
 
 .logo {
@@ -76,8 +76,6 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0; /* Start invisible */
-    animation: fadeIn 3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
