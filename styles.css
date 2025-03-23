@@ -62,12 +62,8 @@ body, html {
     background-color: transparent;
 }
 
-.nav-menu.open {
-    display: flex;
-}
-
 @media (min-width: 768px) {
-  .nav-toggle:hover + .nav-menu {
+  .nav-toggle:hover + .nav-menu.open {
     display: flex; /* Show the menu when the hamburger icon is hovered */
     flex-direction: column;
   }
