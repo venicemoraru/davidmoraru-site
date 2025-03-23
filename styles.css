@@ -67,7 +67,7 @@ body, html {
 }
 
 @media (min-width: 768px) {
-  .nav-toggle:hover + .nav-menu {
+  .menu:hover + .nav-menu {
     display: flex; /* Show the menu when the hamburger icon is hovered */
     flex-direction: column;
   }
