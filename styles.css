@@ -66,23 +66,32 @@ body, html {
     display: flex;
 }
 
+@media (min-width: 768px) {
+  .nav-toggle:hover + .nav-menu {
+    display: flex; /* Show the menu when the hamburger icon is hovered */
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 768px) {
     .video-background iframe {
         object-fit: cover;
         width: 270vw;
         height: 125vh;
     }
-        .nav-toggle {
+    .nav-toggle {
         top: 45px;
         left: 20px;
         font-size: 35px;
     }
-
     .nav-menu {
         top: 80px;
         left: 25px;
         font-size: 35px;
     }
+    .nav-menu.open {
+    display: flex; /* Display menu when toggled */
+  }
 }
 
 /* Prevent horizontal scrolling */
