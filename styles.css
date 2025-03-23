@@ -25,6 +25,8 @@ body, html {
   object-fit: cover;
   z-index: -1;
   pointer-events: none;
+  opacity: 0; /* Start hidden */
+  transition: opacity 3s ease-in; /* Fade in effect */
 }
 
 .logo {
