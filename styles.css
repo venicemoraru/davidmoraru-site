@@ -101,6 +101,9 @@ body, html {
     .nav-menu.open {
     display: flex; /* Display menu when toggled */
   }
+    .note {
+        width: 70%;
+    }
 }
 
 /* Prevent horizontal scrolling */
